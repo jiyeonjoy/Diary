@@ -75,6 +75,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="200"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="clm-f5-BSb" id="tkS-3T-Clb"/>
+                                            <outlet property="titleLabel" destination="WFN-LY-U5J" id="v2O-yv-6Vp"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -95,6 +99,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="9P2-9Y-5PM" id="h9L-tp-gXP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,6 +180,12 @@
                     <navigationItem key="navigationItem" title="일기 작성" id="LTe-Dw-eyI">
                         <barButtonItem key="rightBarButtonItem" title="등록" id="EWa-Y4-QJs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmButton" destination="EWa-Y4-QJs" id="36p-67-vhV"/>
+                        <outlet property="contentsTextView" destination="pvs-xD-QPu" id="qjd-8N-PfQ"/>
+                        <outlet property="dateTextField" destination="CyM-Hf-bNo" id="KMg-6C-Gq6"/>
+                        <outlet property="titleTextField" destination="TRb-rh-wPL" id="eDG-JR-GHf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go2-8I-Ut3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -263,6 +276,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="388" height="80"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="GcV-3W-7h6" id="ohu-iy-P1a"/>
+                                            <outlet property="titleLabel" destination="KmZ-3Z-S5Y" id="Mmn-JQ-Ya6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -277,6 +294,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fkL-2G-A7n"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Stj-ld-Bwd" id="fnO-bZ-IFH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qiy-eS-0CR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,6 +367,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                        <connections>
+                                            <action selector="tapEditButton:" destination="Ovl-io-YLH" eventType="touchUpInside" id="8E1-kt-trk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-yX-M16">
                                         <rect key="frame" x="103.66666666666667" y="0.0" width="53.666666666666671" height="34.333333333333336"/>
@@ -354,6 +377,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="삭제">
                                             <color key="baseForegroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapDeleteButton:" destination="Ovl-io-YLH" eventType="touchUpInside" id="S6i-SN-DQl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -377,6 +403,11 @@
                             <constraint firstItem="c6o-mS-Nzv" firstAttribute="leading" secondItem="R58-GF-XTr" secondAttribute="leading" constant="24" id="sOY-rz-EmA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentsTextView" destination="4WN-NL-mHK" id="DS3-Fc-JSq"/>
+                        <outlet property="dateLabel" destination="cpy-nR-1Nl" id="04y-RK-Z42"/>
+                        <outlet property="titleLabel" destination="tOh-sF-Sgj" id="C3W-HV-Db7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esT-nk-Yz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
