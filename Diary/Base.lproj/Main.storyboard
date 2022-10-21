@@ -110,7 +110,7 @@
         <!--일기 작성-->
         <scene sceneID="nOc-0e-DEv">
             <objects>
-                <viewController id="xSx-KW-zfh" customClass="WriteViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xSx-KW-zfh" customClass="WriteDiaryViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwy-xg-52a">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="일기 작성" id="LTe-Dw-eyI">
-                        <barButtonItem key="rightBarButtonItem" title="등록" id="EWa-Y4-QJs"/>
+                        <barButtonItem key="rightBarButtonItem" title="등록" id="EWa-Y4-QJs">
+                            <connections>
+                                <action selector="tapConfirmButton:" destination="xSx-KW-zfh" id="cIa-Ar-az0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="confirmButton" destination="EWa-Y4-QJs" id="36p-67-vhV"/>
@@ -305,7 +309,7 @@
         <!--Diary Detail View Controller-->
         <scene sceneID="U3P-HT-XTc">
             <objects>
-                <viewController id="Ovl-io-YLH" customClass="DiaryDetailViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryDetailViewController" id="Ovl-io-YLH" customClass="DiaryDetailViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0A0-XA-7kW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
